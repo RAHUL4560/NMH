@@ -1,0 +1,746 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Nurtur My House</title>
+    <link rel="icon" href=" static/img/logo-unit-removebg-preview-2.png" >
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    <!-- animate CSS -->
+    <link rel="stylesheet" href="static/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="static/css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="static/css/liner_icon.css">
+    <link rel="stylesheet" href="static/css/search.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  body{
+  background-color:#FFF;
+    font-weight: 300;
+  font-size:16px;
+  line-height:18px;
+  color:#777;
+}
+  .footer-area {
+  background-color: #c01526;
+  padding: 50px 0 25px;
+  max-width: 100%;
+  margin-top: 70px;
+
+}
+.masthead {
+  height: 80vh;
+  min-height: 500px;
+  margin-top: 40px;
+  background-image: url("static/img/NMH-Cleaning-Page.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*.hero-image {
+  background-image: url("static/img/NMH-Cleaning-Page.png");
+  height: 70%;
+  top:8%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}*/
+/*# sourceMappingURL=../css/style.map */
+
+
+.nav-item active{
+ border-bottom: 3px solid red;
+}
+.photo_gallary{
+  width:100%;
+  margin-left: 40px;
+}
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #800000;
+}
+.vl {
+  border-left: 3px solid red;
+  height: 800px;
+  margin-left:600px;
+  margin-bottom: 80px;
+
+}
+
+/*# sourceMappingURL=../css/style.map */
+
+.card1 {
+  flex-direction: row;
+  align-items: center;
+}
+.card1-title {
+  font-weight: bold;
+}
+.card1 img {
+  width: 30%;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+@media only screen and (max-width: 768px) {
+ 
+  .card1-body {
+    padding: 0.5em 1.2em;
+  }
+  .card1-body .card1-text {
+    margin: 0;
+  }
+  .card1 img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card1 img {
+    width: 40%;
+  }
+}
+.container{
+    margin-top: 0%;
+}
+
+
+body {margin:0;}
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  margin-left:350px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: solid red;
+  text-align: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+.wrapper {
+  height: 420px;
+  width: 900px;
+  margin: 50px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 527px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #fff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 25px;
+  color: #c01526;
+
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Roboto', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #c01526;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: 'Roboto', serif;
+  color: #8d8d8d;
+  line-height: 1.7em;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 20px;
+  margin-left: 40px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #474747;
+}
+
+
+
+.product-price-btn button {
+  float: left;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 15px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background-color: #c01526;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+
+}
+.label             { width:5em }
+.label:after       { content:'SELECT'; }
+.label:hover:after { content:'PROCEED'; }
+.card3{
+    padding: 10%;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 737px) {
+  .wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 10px auto;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.product-img img{
+  height: 100%;
+  width: 100%;
+  padding-right: 100px;
+  margin-left: -10px;
+}
+
+
+.product-info {
+  float: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0 7px 10px 7px;
+  background-color: #fff;
+}
+
+.product-text {
+  height: 300px;
+  width: 100%;
+}
+
+.product-text h1 {
+  margin-left:  70px;
+  padding-top: 22px;
+  font-size: 25px;
+  color: #c01526;
+
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Roboto', serif;
+}
+
+.product-text h2 {
+  margin-left:70px;
+  font-size: 25px;
+  font-weight: 400;
+  color: #c01526;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 105px;
+  font-family: 'Roboto', serif;
+  color: #8d8d8d;
+  line-height: 1;
+  font-size: 20px;
+  font-weight: lighter;
+  overflow: hidden;
+  margin-left: 70px;
+
+}
+
+.product-price-btn {
+ 
+  margin-top: 0px;
+  margin-left: 40px;
+  position: relative;
+}
+
+
+
+
+.product-price-btn button {
+  float: left;
+  display: inline-block;
+  height: 50px;
+  width: 140px;
+  margin: 10px 15px 0 40px;
+  box-sizing: border-box;
+  border: transparent;
+  border-radius: 40px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  color: #fff;
+  background-color: #c01526;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #79b0a1;
+
+}
+.label             { width:5em }
+.label:after       { content:'SELECT'; }
+.label:hover:after { content:'PROCEED'; }
+.card3{
+    padding: 10%;
+}
+}
+
+
+.card3-block{
+  padding-top:30px;
+
+}
+.card3 label{
+  position: absolute;
+  background-color: #ffc107;
+  padding: 5px 15px;
+  top:166px;
+}
+.card3 .date{
+  font-size:13px;
+  top:20px;
+  border-radius: 50%;
+  width:50px;
+  right:20px;
+}
+
+.btn-store {
+  color: #fff;
+  width: 170px;
+  padding:  45px 0px!important;
+  margin-top: -40px !important;
+  margin-left: 0px !important;
+}
+
+.btn-store:focus, 
+.btn-store:hover {
+  color: #fff !important;
+  background-color:  #fc4600;
+  border-color: #fff !important;
+}
+
+.btn-store .btn-label, 
+.btn-store .btn-caption {
+  display: block;
+  text-align: left;
+  line-height: 1;
+}
+
+.btn-store .btn-caption {
+  font-size: 20px;
+}
+</style>
+<body>
+   <!--::header part start::-->
+    <header class="main_menu">
+        <div class="container" >
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="/"> <img src="{% static 'img/logo-unit-removebg-preview-2.png'%}" alt="logo" style="width:110px; height:90px;"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                             <!--    <li class="nav-item active" style = "border-bottom: 4px solid red; ">
+                                    <a class="nav-link" href="/" >HOME</a>
+                                </li> -->
+                               
+                               <li class="nav-item dropdown" >
+                                    <a class="nav-link dropdown-toggle" href="/Interior" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        INTERIOR DESIGN
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/Interior">DESIGNS</a>
+                                        <a class="dropdown-item" href="/Collection">COLLECTIONS</a>
+
+                                        <a class="dropdown-item" href="/proj_delivered">PROJECT DELIVERED</a>
+                                        <a class="dropdown-item" href="/howitworks">HOW IT WORKS</a>
+<!--                                         <a class="dropdown-item" href="/aboutourarchitect">ABOUT OUR ARCHITECT</a>
+ -->
+                                        <a class="dropdown-item" href="/faqs">FAQS</a>
+
+
+                                    </div>
+                                </li>
+                                <li class="nav-item active" style = "border-bottom: 4px solid red;  ">
+                                    <a class="nav-link" href="/Cleaning"> CLEANING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/Repair"> REPAIRS & MAINTENANCE</a>
+                                </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="/testing"> RENTING & MANAGEMENT </a>
+                                </li>
+                                <li class="nav-item"  >
+                                    <a class="nav-link" href="/Contact" style = "margin-left:20px;">CONTACT US </a>
+                                </li>
+                                {% if user.is_authenticated %}
+
+                                                <a class="nav-menu dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style = "margin-top:50px;">
+                                                  Welcome {{request.user}}
+                                                </a>
+                                                <div class="dropdown-menu " aria-labelledby="navbarDropdown" style = "margin-left:1000px;">
+                                                  <a class="dropdown-item text-info" href="/logout">LOG OUT</a>
+
+                                                </div>
+
+                                            {% else %}
+                            </ul>
+                            <!--Button to trigger signup modal-->
+                                            <button type="button" class= "btn btn-outline-danger waves-effect" data-toggle="modal" data-target = "#" style="margin-left:40px; font-weight: bold; width:150px;">LOGIN</button>
+
+  {% endif %}
+                        </div>
+
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+  
+<div class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-left">
+        <h1 class="font-weight-bold" style="color:#fff;">Kitchen is the heart of your <br>home! And we keep it like new.</h1><br><br>
+        <p class="lead" style="color:#fff;">Our cleaning experts work their magic across every corner of your<br> kitchen to keep it clean and sparkling - from fridge to chimneys to <br>shelves to stoves to floor.</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<h2 style = "color:#c01526; text-align: center; margin-top:50px; font-size: 35px; font-family: Roboto; border-bottom: 4px solid pink;"> PACKAGES </h2>
+
+
+  <h2 style = "color:#c01526; text-align: center; margin-top:50px; font-size: 30px; font-family: Roboto;"> Select from the wide range of available packages for your kitchen</h2>
+
+
+  <div class="wrapper">
+      <div class="product-img">
+        <img src="static/img/Kitchen-Cleaning-Basic-Package.png" height="420" width="527">
+      </div>
+      <div class="product-info">
+        <div class="product-text">
+          <h1 style="font-weight: bold; color:solid grey;">Kitchen</h1><br>
+          <h2>Starting from INR 1999</h2>
+          <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+        </div>
+        <div class="product-price-btn">
+          <button type="button" class = "label" onclick="location.href='/basic_package';"></button>
+
+        </div>
+      </div>
+    </div><br><br>
+    <div class="wrapper">
+        <div class="product-img">
+          <img src="static/img/Kitchen-Cleaning-Refrigerator+Basic-Package.png" height="420" width="527">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1 style="font-weight: bold; color:solid grey;">Kitchen+Refrigerator</h1> <br>
+            <h2>Starting from INR 2099</h2>
+            <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+          </div>
+          <div class="product-price-btn">
+            <button type="button" class = "label" onclick="location.href='/refrigerator';"></button>
+
+          </div>
+        </div>
+      </div><br><br>
+      <div class="wrapper">
+          <div class="product-img">
+            <img src="static/img/NMH-Cleaning-Page-Chimney-Cleaning.png" height="420" width="527">
+          </div>
+          <div class="product-info">
+            <div class="product-text">
+              <h1 style="font-weight: bold; color:solid grey;">Kitchen+Refrigerator+<br>Chimney</h1><br>
+              <h2>Starting from INR 2499</h2>
+              <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+            </div>
+            <div class="product-price-btn" style="padding-top: 20px;">
+
+              <button type="button" class = "label" onclick="location.href='/chimney';"></button>
+
+            </div>
+          </div>
+        </div><br><br>
+        <div class="wrapper">
+            <div class="product-img">
+              <img src="static/img/NMH-Cleaning-Page-Stove-Cleaning.png" height="420" width="527">
+            </div>
+            <div class="product-info">
+              <div class="product-text">
+                <h1 style="font-weight: bold; color:solid grey;">Kitchen+Refrigerator+<br>Chimney+MWave</h1><br>
+                <h2>Starting from INR 2999</h2>
+                <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+              </div>
+              <div class="product-price-btn" style="padding-top: 20px;">
+
+                <button type="button" class = "label" onclick="location.href='/mwave';"></button>
+              </div>
+            </div>
+          </div><br><br>
+          
+            <div class="container" style = "font-size:14px; font-weight:bold;">
+              <div class="card bg-danger text-white">
+                <div class="card-body" style="line-height: 20px;">NOTE <br><br>Following objects or appliances are not included in the Kitchen Deep Clean Services - utensils, cutlery & crockery, glassware, tableware, linen and cloth material.</div>
+              </div>
+
+            </div>
+            <div class="container" style="padding-top: 50px;">
+              <h2 style="font-size:30px;color:#8b0000; font-style:bold;"> In few simple steps you can select the service that you are looking for. </h2>
+              <div class="row">
+                <div class="col-lg-3 col-sm-3 col-10">
+                  <div class="card3" >
+                    <div class="card3-block">
+                      <h4 style = "color:#8b0000;font-weight:bold;">Select package</h4><br>
+
+                    </div>
+                      <img src="static/img/select-package.png" alt="Card image cap" width="200px" height="200px" style = "border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br><br>
+                      <div class="card3-block">
+                        <h3>Select the package basis your requirement. We recommend to opt for the complete package for optimum result.</h3><br>
+
+                      </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-3 col-10">
+                  <div class="card3">
+                    <div class="card3-block">
+                      <h4 style = "color:#8b0000;font-weight:bold;">Submit kitchen details</h4><br>
+
+                    </div>
+                    <img src="static/img/l-shape.png" alt="Card image cap" width="200px" height="200px" style = "border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br><br>
+
+                      <div class="card3-block">
+                        <h3>Select the kitchen, shape size and other details that will help us in estimating the time and effort required for the job.</h3><br>
+
+                      </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-5 col-10">
+                  <div class="card3">
+                    <div class="card3-block">
+                      <h4 style = "color:#8b0000;font-weight:bold;">Select schedule</h4><br>
+
+                    </div>
+                    <img src="static/img/time.png" alt="Card image cap" width="200px" height="200px" style = "border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br><br>
+
+                      <div class="card3-block">
+                        <h3>Choose the time when you prefer our experts to visit your house and execute the selected job.</h3><br>
+
+                      </div>
+                  </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-5 col-10">
+                  <div class="card3">
+                    <div class="card3-block">
+                      <h4 style = "color:#8b0000;font-weight:bold;">Confirmation on call</h4><br>
+
+                    </div>
+                    <img src="static/img/phone.png" alt="Card image cap" width="200px" height="200px" style = "border-radius: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><br><br>
+                      <div class="card3-block">
+                        <h3>Once you have submitted all the information we will speak to you within 30 minutes and confirm the details.</h3><br>
+
+                      </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div><br><br>
+ <footer class="footer-area" >
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+          <h4 style="color: #fff;">about us</h4>
+          <p style="color: #fff;"> Nurture My House is a company envisaged by young engineers. We could feel the gap between a problem and service, keeping this in mind we have tried to bridge this gap by offering services.
+ You get every service pertaining to your household needs.
+We offer you best of services with competitive rates which will certainly live to your satisfaction.</p>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+          <h4 style="color: #fff;">Contact Info</h4>
+          <ul style="color: #fff;">
+       <li><p style="color: #fff;">Address : 3rd Floor, Sarvodaya Enclave Shri Aurobindo Marg,<br>Near Mother's International School<br>New Delhi 110017</p></li>
+            <li><p style="color: #fff;">Phone :+918800291444,+919718930205</p></li>
+            <li><p style="color: #fff;">Email : info@nurturemyhouse.com</p></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+          <h4 style="color: #fff;">Important Links</h4>
+          <ul>
+                                    <li><a href="#" style="color: #fff;">How It Works</a></li>
+
+            <li ><a href="#" style="color: #fff;">Terms & Conditions</a></li>
+            <li><a href="#" style="color: #fff;">Refer a Friend</a></li>
+            <li><a href="#" style="color: #fff;">About Us</a></li>
+
+            <li><a href="#" style="color: #fff;">FAQ'S</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-sm-6 mb-4 mb-xl-0 single-footer-widget">
+          <h4  style="color: #fff;">Mobile Apps</h4>
+    <br/>
+        <p>
+            <a href="#" class="btn btn-store">
+                <span class="fa fa-apple fa-2x pull-left"></span> 
+                <span class="btn-label">Download on the</span>
+                <span class="btn-caption">App Store</span>
+            </a>
+            <a href="#" class="btn btn-store">
+                <span class="fa fa-android fa-2x pull-left"></span> 
+                <span class="btn-label">Download on the</span>
+                <span class="btn-caption">Google Play</span>
+            </a>
+            
+        </p>
+          
+      </div>
+ 
+          <div class="col-lg-12 text-center text-lg-center" >
+            <div class="footer-social"> 
+             <a href="https://www.facebook.com/nurturemyhouse" target="_blank" style=" display: inline-block;margin: 0 15px 0 0;"><i class="fa fa-facebook-f" style="font-size:40px;color:#fff"></i></a>
+              <a href="mailto:info@nurturemyhouse.com" target="_blank" style=" display: inline-block;margin: 0 15px 0 0;"><i class="fa fa-envelope" style="font-size:40px;color:#fff"></i></a>
+              <a href="https://www.pinterest.es/NurtureMyHouse/" target="_blank" style=" display: inline-block;margin: 0 15px 0 0;"><i class="fa fa-pinterest" style="font-size:40px;color:#fff"></i></a>
+              <a href="https://twitter.com/nurturemyhouse" target="_blank" style=" display: inline-block;margin: 0 15px 0 0;"><i class="fa fa-twitter" style="font-size:40px;color:#fff"></i></a>
+              <a href="https://www.instagram.com/nurturemyhouse/" target="_blank" style=" display: inline-block;margin: 0 15px 0 0;"><i class="fa fa-instagram" style="font-size:40px;color:#fff"></i></a>
+
+            </div>
+          </div>
+       
+    </div>
+  </footer>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="static/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src=" static/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src=" static/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src=" static/js/custom.js"></script>
+</body>
+
+</html>
